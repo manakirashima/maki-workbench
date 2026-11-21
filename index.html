@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8f3e9" />
+  <meta name="description" content="用来珍藏 OC 设定、PARO 故事、约稿过程与零碎灵感的私人工作台。资料仅保存在当前浏览器。" />
+  <title>maki的工作台</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主要导航">
+      <div class="sidebar-top">
+        <button class="brand" data-nav="home" aria-label="返回主页">
+          <span class="brand-mark" aria-hidden="true"><span class="brand-mark-flower">✿</span></span>
+          <span class="brand-wordmark"><strong id="sideBrand">maki的工作台</strong><small>MONOGATARI STUDIO</small></span>
+        </button>
+        <div class="nav-section-caption">目 录 <span>INDEX</span></div>
+        <nav class="side-nav" id="sideNav"></nav>
+      </div>
+      <div class="side-footer">
+        <div class="side-flower" aria-hidden="true">✾</div>
+        <span class="side-motto">一点一滴，都有故事。</span>
+        <small>PRIVATE · LOCAL FIRST</small>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="mobile-brand-symbol">✿</span><strong id="mobileBrand">maki的工作台</strong></div>
+        <div class="topbar-breadcrumb" id="breadcrumbs">书阁 <span class="crumb-divider">/</span> 工作台</div>
+        <div class="topbar-right">
+          <span class="local-pill"><span class="local-dot"></span><span data-i18n="localSave">仅存于此设备</span></span>
+          <button class="icon-button" data-action="open-search" id="topSearchButton" aria-label="搜索" title="搜索"></button>
+          <button class="top-avatar" data-nav="settings" id="topAvatar" aria-label="打开设置" title="设置"><span>✿</span></button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer class="page-footer"><span>✿</span> <span id="footerBrand">maki的工作台</span><span class="footer-line"></span><span>为每个值得珍藏的故事留一席之地</span></footer>
+    </div>
+    <nav class="mobile-bottom-nav" id="mobileNav" aria-label="手机导航"></nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="lightboxRoot"></div>
+  <div id="toastRoot" role="status" aria-live="polite"></div>
+  <input type="file" id="importFile" accept=".zip,application/zip" hidden />
+  <script src="./app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+ "name": "maki的工作台",
+ "short_name": "OC工作台",
+ "description": "私人 OC 设定、PARO、约稿与灵感整理工具",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f8f3e9",
+ "theme_color": "#9a4e56",
+ "icons": [{"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
